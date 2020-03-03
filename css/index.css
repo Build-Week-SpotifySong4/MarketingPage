@@ -294,13 +294,9 @@ footer p {
 .tryOut button:hover {
   opacity: 0.7;
 }
-.aboutmiddleimg {
-  background-image: url(/img/newaboutpic.jpg);
-  background-size: cover;
-  background-position: center;
+.aboutimg {
   width: 100%;
-  padding: 5% 0;
-  height: 60vh;
+  height: auto;
 }
 .meet {
   width: 1150px;
@@ -349,6 +345,10 @@ footer p {
 .team div h3 {
   padding: 2%;
   font-size: 2rem;
+}
+.team div p {
+  padding: 2%;
+  font-size: 1.5rem;
 }
 .team div button {
   display: block;
