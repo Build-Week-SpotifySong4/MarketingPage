@@ -161,10 +161,48 @@ html {
   text-decoration: none;
   color: white;
 }
-.headerPic {
-  padding: 0 20%;
+.middleimg {
+  background-image: url("https://images.unsplash.com/photo-1487235829740-e0ac5a286e1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80");
   width: 100%;
+}
+.middleimg .headerPic {
+  width: 60%;
+  height: 80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .mood {
   padding: 0 20%;
+}
+.mood h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2% 0;
+}
+.mood div {
+  display: flex;
+}
+.mood div div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2.5rem;
+}
+.mood div div img {
+  width: 95%;
+}
+.mood div div p {
+  padding: 2% 0;
+}
+.info {
+  padding: 0 20%;
+}
+.info .div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
 }
