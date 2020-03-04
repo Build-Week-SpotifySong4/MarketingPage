@@ -5,6 +5,17 @@
     width: 100%;
     height:60vh;
     
+    @media @1150{
+        height:40vh;
+    }
+
+    @media @950{
+        height:30vh;
+    }
+    @media @750{
+        height:25vh;
+    }
+
     .headerPic{
         padding-top:5%;
         width:30%;
@@ -12,6 +23,10 @@
         display:block;
         margin-left:auto;
         margin-right: auto;
+
+        @media @500{
+            padding-top:15%;
+        }
     }
 }
 .mood{
@@ -26,13 +41,19 @@
     }
     div{
         display:flex;
-        
+
+        @media @750{
+        flex-wrap:wrap;
+        }
         div{
             .displayflex(space-evenly, center);
             flex-direction: column;
             width:100%;
             font-size:2.7rem;
             
+            @media @750{
+                width:48%;
+            }
 
             img{
                 width:95%;
@@ -59,10 +80,18 @@
     margin-top:2%;
     .displayflex(space-between,flex-start);
 
+    @media @500{
+        flex-wrap:wrap;
+    }
+
     div{
         width:30%;
         .displayflex(center, flex-start);
         flex-direction: column;
+
+        @media @500{
+            width:100%;
+        }
 
         h3{
             font-size:2rem;

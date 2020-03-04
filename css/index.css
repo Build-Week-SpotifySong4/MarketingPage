@@ -139,9 +139,21 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 html {
   font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Julius Sans One', sans-serif;
 }
 .container {
   width: 100%;
@@ -157,8 +169,30 @@ html {
   position: fixed;
   top: 0;
 }
+@media (max-width: 1150px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .nav {
+    flex-direction: row-reverse;
+    padding: 1% 0;
+  }
+}
 .nav h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+@media (max-width: 900px) {
+  .nav h1 {
+    text-align: center;
+    margin-right: 28%;
+  }
+}
+@media (max-width: 750px) {
+  .nav h1 {
+    margin-right: 20%;
+  }
 }
 .nav .links {
   display: flex;
@@ -166,6 +200,12 @@ html {
   align-items: center;
   width: 40%;
   font-size: 2rem;
+}
+@media (max-width: 900px) {
+  .nav .links {
+    flex-direction: column;
+    width: 20%;
+  }
 }
 .nav .links a {
   text-decoration: none;
@@ -182,8 +222,18 @@ footer div {
   padding: 1% 20%;
   width: 100%;
 }
+@media (max-width: 1150px) {
+  footer div {
+    flex-direction: column;
+  }
+}
 footer div h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  footer div h2 {
+    font-size: 2rem;
+  }
 }
 footer div .links {
   display: flex;
@@ -208,12 +258,32 @@ footer p {
   width: 100%;
   height: 60vh;
 }
+@media (max-width: 1150px) {
+  .middleimg {
+    height: 40vh;
+  }
+}
+@media (max-width: 950px) {
+  .middleimg {
+    height: 30vh;
+  }
+}
+@media (max-width: 750px) {
+  .middleimg {
+    height: 25vh;
+  }
+}
 .middleimg .headerPic {
   padding-top: 5%;
   width: 30%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 500px) {
+  .middleimg .headerPic {
+    padding-top: 15%;
+  }
 }
 .mood {
   width: 1150px;
@@ -227,6 +297,11 @@ footer p {
 .mood div {
   display: flex;
 }
+@media (max-width: 750px) {
+  .mood div {
+    flex-wrap: wrap;
+  }
+}
 .mood div div {
   display: flex;
   justify-content: space-evenly;
@@ -234,6 +309,11 @@ footer p {
   flex-direction: column;
   width: 100%;
   font-size: 2.7rem;
+}
+@media (max-width: 750px) {
+  .mood div div {
+    width: 48%;
+  }
 }
 .mood div div img {
   width: 95%;
@@ -257,12 +337,22 @@ footer p {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 500px) {
+  .info {
+    flex-wrap: wrap;
+  }
+}
 .info div {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .info div {
+    width: 100%;
+  }
 }
 .info div h3 {
   font-size: 2rem;
