@@ -140,7 +140,6 @@ table {
   box-sizing: border-box;
   max-width: 100%;
   font-family: 'Archivo Narrow', sans-serif;
-  border: 1px solid pink;
 }
 html {
   font-size: 62.5%;
