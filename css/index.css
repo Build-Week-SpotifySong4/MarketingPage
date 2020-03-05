@@ -140,6 +140,7 @@ table {
   box-sizing: border-box;
   max-width: 100%;
   font-family: 'Archivo Narrow', sans-serif;
+  border: 1px solid pink;
 }
 html {
   font-size: 62.5%;
@@ -176,7 +177,6 @@ h5 {
 }
 @media (max-width: 900px) {
   .nav {
-    flex-direction: row-reverse;
     padding: 1% 0;
   }
 }
@@ -186,12 +186,6 @@ h5 {
 @media (max-width: 900px) {
   .nav h1 {
     text-align: center;
-    margin-right: 28%;
-  }
-}
-@media (max-width: 750px) {
-  .nav h1 {
-    margin-right: 20%;
   }
 }
 .nav .links {
@@ -201,10 +195,14 @@ h5 {
   width: 40%;
   font-size: 2rem;
 }
+@media (max-width: 1150px) {
+  .nav .links {
+    width: 60%;
+  }
+}
 @media (max-width: 900px) {
   .nav .links {
-    flex-direction: column;
-    width: 20%;
+    width: 100%;
   }
 }
 .nav .links a {
@@ -212,39 +210,52 @@ h5 {
   color: white;
 }
 footer {
+  padding-top: 1%;
   background-color: black;
   color: white;
+  width: 100%;
 }
-footer div {
+footer .foot {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 20%;
-  width: 100%;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 1150px) {
-  footer div {
+  footer .foot {
     flex-direction: column;
   }
 }
-footer div h2 {
+footer .foot h2 {
   font-size: 2.5rem;
 }
 @media (max-width: 500px) {
-  footer div h2 {
+  footer .foot h2 {
     font-size: 1.7rem;
   }
 }
-footer div .links {
+footer .foot .links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 30%;
   font-size: 1.5rem;
 }
-footer div .links a {
+@media (max-width: 750px) {
+  footer .foot .links {
+    flex-direction: column;
+  }
+}
+footer .foot .links a {
   text-decoration: none;
   color: white;
+}
+@media (max-width: 750px) {
+  footer .foot .links a {
+    margin: 1% 0;
+  }
 }
 footer p {
   text-align: center;
@@ -271,6 +282,11 @@ footer p {
 @media (max-width: 750px) {
   .middleimg {
     height: 25vh;
+  }
+}
+@media (max-width: 400px) {
+  .middleimg {
+    height: 20vh;
   }
 }
 .middleimg .headerPic {
